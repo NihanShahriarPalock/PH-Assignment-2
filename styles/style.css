@@ -14,15 +14,17 @@
 
 /* Common Style Section */
 
-/* .btn-primary {
-  height: 52px;
+.btn-primary {
+  /* height: 52px; */
   border-radius: 8px;
   background-color: var(--primary-color);
   color: #fff;
   text-align: center;
   font-size: 20px;
   font-weight: 800;
-} */
+  padding: 10px 20px;
+  border: none;
+} 
 
 header,
 main {
@@ -145,6 +147,74 @@ input::placeholder {
   margin-right: 5px;
 }
 
+/* Popular Tour Section Styles */
+
+.polular-tours-section {
+  display: flex;
+  
+  justify-content: space-between;
+  margin-top: 5rem;
+  
+
+}
+
+.popular-tour-text {
+  width: 50%;
+  /* border: 2px solid red; */
+}
+
+.popular-header {
+  color: #131318;
+  /* text-align: center; */
+  font-size: 2.8rempx;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.popular-desc {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.listed-item {
+  margin-left: 1.3rem;
+  margin-top: 24px;
+}
+
+.popular-list {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 16px 0;
+}
+
+.popular-text-summary {
+    margin: 24px 0 32px;
+    color: #5a5a5d;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+.popular-tour-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  /* border: 2px solid green; */
+  align-content: end;
+}
+
+.popular-tour-image img {
+  width: 60%;
+  
+}
+
+/* Why choose us section Styles */
+
+
+
 @media screen and (max-width: 600px) {
   header,
   main {
@@ -172,5 +242,25 @@ input::placeholder {
   .input-field,
   button {
     flex-direction: column;
+  }
+
+  /* Popular Tour Styles */
+
+  .polular-tours-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popular-tour-text {
+    width: 100%;
+  }
+
+  .popular-tour-image {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .popular-tour-image img {
+    width: 100%;
   }
 }
