@@ -24,7 +24,7 @@
   font-weight: 800;
   padding: 10px 20px;
   border: none;
-} 
+}
 
 header,
 main {
@@ -151,11 +151,9 @@ input::placeholder {
 
 .polular-tours-section {
   display: flex;
-  
+
   justify-content: space-between;
   margin-top: 5rem;
-  
-
 }
 
 .popular-tour-text {
@@ -191,12 +189,12 @@ input::placeholder {
 }
 
 .popular-text-summary {
-    margin: 24px 0 32px;
-    color: #5a5a5d;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-  }
+  margin: 24px 0 32px;
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
 
 .popular-tour-image {
   width: 50%;
@@ -208,17 +206,63 @@ input::placeholder {
 
 .popular-tour-image img {
   width: 60%;
-  
+}
+
+/* Choose your destination Styles */
+
+.choose-destination-section {
+  margin: 100px 0;
 }
 
 /* Why choose us section Styles */
+.choose-us-section {
+  margin: 100px 0;
+}
+.choose-us-title {
+  text-align: center;
+}
 
+.choose-us-desc {
+  margin: 24px 0 48px;
+  text-align: center;
+}
 
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.card {
+  width: 573px;
+  height: 284px;
+  padding: 32px 0 32px 32px;
+  background-color: rgba(251, 181, 99, 0.05);
+  border-radius: 16px;
+}
+
+.world-card{
+    background-color: rgba(41, 206, 246, 0.05);;
+}
+
+.card-title {
+  margin: 32px 0 16px;
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.card-desc{
+color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
 
 @media screen and (max-width: 600px) {
   header,
   main {
-    margin: 10px;
+    margin: 15px;
   }
   .nav-link {
     display: none;
@@ -263,4 +307,18 @@ input::placeholder {
   .popular-tour-image img {
     width: 100%;
   }
+
+  /* Why choose us section Styles */
+
+  .card-box{
+    flex-direction: column;
+   
+}
+
+.card {
+    
+    width: auto;
+    height: 284px;
+
+
 }
