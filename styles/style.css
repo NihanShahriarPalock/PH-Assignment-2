@@ -352,6 +352,45 @@ input::placeholder {
   position: relative;
   text-align: center;
 }
+/* sample perfect section styels */
+
+.sample-perfect-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+.sample-perfect-text{
+  width: 50%;
+}
+
+.sample-perfect-text h1{
+color: #131318;
+font-size: 40px;
+font-weight: 800;
+line-height: 60px; 
+}
+.sample-perfect-text p{
+  color: #5A5A5D;
+font-weight: 400;
+line-height: 26px; 
+margin: 24px 0;
+}
+
+.sample-perfect-text li{
+  margin: 16px;
+}
+
+.sample-perfect-video{
+  width: 50%;
+}
+
+.sample-perfect-video iframe{
+  width: 100%;
+  border-radius: 16px;
+}
+
+
+
 
 /* News Letter Section */
 
@@ -406,11 +445,29 @@ form {
 
 .newsletter-image {
   width: 50%;
+  position: relative;
 }
 
 .newsletter-image img {
   width: 100%;
   border-radius: 16px;
+}
+.discount-box{
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 5.3rem;
+  right: -0.70rem;
+  transform: rotate(-45deg);
+}
+.discount-box p{
+  color: #FFF;
+text-align: center;
+font-size: 24px;
+}
+.discount-box h1{
+  color: #FFF;
+font-size: 32px;
+font-weight: 800;
 }
 
 /* Footer Section Styles */
@@ -512,6 +569,21 @@ footer {
   }
 
   /* Deals & Discounts Styles */
+
+  /* Sample Perfect */
+
+  .sample-perfect-section{
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sample-perfect-text{
+    width: 100%;
+  }
+  .sample-perfect-video{
+    width: 100%;
+  }
+
+
 
   /* News Letter Section */
 
