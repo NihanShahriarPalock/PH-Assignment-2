@@ -211,27 +211,34 @@ input::placeholder {
 /* Choose your destination Styles */
 
 .choose-destination-section {
-  margin: 100px 0;
+  margin: 6.25rem 0;
 }
 
 /* Why choose us section Styles */
 .choose-us-section {
-  margin: 100px 0;
+  margin: 6.25rem 0;
 }
 .choose-us-title {
   text-align: center;
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .choose-us-desc {
   margin: 24px 0 48px;
   text-align: center;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
 }
 
-.card-box{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
 }
 .card {
   width: 573px;
@@ -241,8 +248,13 @@ input::placeholder {
   border-radius: 16px;
 }
 
-.world-card{
-    background-color: rgba(41, 206, 246, 0.05);;
+.world-card {
+  background-color: rgba(41, 206, 246, 0.05);
+}
+
+.price-card {
+  /* display: flex; */
+  margin: 0 auto;
 }
 
 .card-title {
@@ -252,12 +264,86 @@ input::placeholder {
   font-weight: 800;
 }
 
-.card-desc{
-color: #5A5A5D;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
+.card-desc {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
+
+/* Deals & Discounts Styles */
+
+.deals-discounts-section {
+  margin: 100px 0;
+ 
+  
+}
+
+.deals-discounts-section h1 {
+  text-align: center;
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.deals-discounts-section p {
+  margin: 24px 0 48px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-weight: 400;
+  line-height: 26px;
+}
+.discount-image div{
+    width: 100%;
+    margin: 24px 0;
+}
+
+.discount-image div img{
+    width: 100%;
+    
+    
+}
+.discount-btn{
+    /* border: 2px solid red; */
+    position: relative;
+    text-align: center;
+   
+}
+
+
+/* Footer Section Styles */
+footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+}
+.footer-top{
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-desc{
+  margin: 15px 0 33px;
+}
+.social-icon i{
+    margin-bottom:50px;
+    gap: 2rem;
+    padding-left: 23px;
+    
+  }
+.copyright{
+ color: #131318;
+/* font-size: 16px; */
+margin:3rem 0 16.8rem;
+
+}
+
 
 @media screen and (max-width: 600px) {
   header,
@@ -310,15 +396,14 @@ line-height: 26px;
 
   /* Why choose us section Styles */
 
-  .card-box{
+  .card-box {
     flex-direction: column;
-   
-}
+  }
 
-.card {
-    
+  .card {
     width: auto;
     height: 284px;
+  }
 
-
+  /* Deals & Discounts Styles */
 }
