@@ -49,7 +49,7 @@ main {
 .nav-logo img {
   margin-right: 16px;
 }
-.world{
+.world {
   color: var(--primary-color);
 }
 
@@ -83,7 +83,7 @@ main {
   height: 70vh;
   width: auto;
   margin: 8px auto;
-  border-radius: 16px;
+  border-radius: 1rem;
   text-align: center;
   color: #fff;
   display: flex;
@@ -114,7 +114,8 @@ main {
 }
 
 .box {
-  height: 50px;
+  height: 3.1rem;
+  width: 11rem;
   margin: 10px;
   background-color: #fff;
   color: rgb(0, 0, 0);
@@ -140,11 +141,12 @@ main {
 
 input::placeholder {
   text-align: center;
+  color: #131318;
 }
 
-.box::placeholder {
+/* .box::placeholder {
   color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .fa-magnifying-glass {
   margin-right: 5px;
@@ -233,7 +235,6 @@ input::placeholder {
   line-height: 26px;
 }
 
-
 .row {
   display: flex;
   justify-content: space-between;
@@ -248,7 +249,7 @@ input::placeholder {
 .row img {
   width: 100%;
   margin: 1rem;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .image-container p {
@@ -256,13 +257,10 @@ input::placeholder {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; 
+  color: white;
   font-size: 1.8rem;
-  font-weight: 800; 
+  font-weight: 800;
 }
-
-
-
 
 /* Why choose us section Styles */
 .choose-us-section {
@@ -343,56 +341,52 @@ input::placeholder {
   line-height: 26px;
 }
 
-.disount-card{
-  
+.disount-card {
   width: 100%;
   height: 100%;
-  padding:20px;
+  padding: 20px;
   display: flex;
   /* justify-items: end; */
   justify-content: end;
   margin-bottom: 10px;
 }
 
-.discount-card-start{
-
+.discount-card-start {
   justify-content: start;
-
 }
 
+.discount-btn {
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-.card-one{
+.card-one {
   background: url("../images/discount-1.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-
 }
-.card-two{
+.card-two {
   background: url("../images/discount-2.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
 }
 
-
-.deals-card{
+.deals-card {
   width: max-content;
   /* height: 400px; */
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid red;
   padding: 50px 50px;
   border-radius: 16px;
-  
-
 }
 
-
-
-.deals-card h2{
+.deals-card h2 {
   margin: 26px 0 16px;
-
-} 
+}
 .card-icon {
   display: flex;
   /* border: 2px solid red; */
@@ -402,73 +396,62 @@ input::placeholder {
 }
 
 .card-icon p {
-  color: #5A5A5D;
+  color: #5a5a5d;
   font-size: 16px;
   font-weight: 400;
-  padding-right: 10px; 
+  padding-right: 10px;
 }
 
-.deals-card p{
-  color: #5A5A5D;
-font-weight: 400;
-line-height: 26px;
-text-align: left;
-margin:0;
+.deals-card p {
+  color: #5a5a5d;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  margin: 0;
 }
-.deals-card .price{
+.deals-card .price {
   color: var(--primary-color);
   text-align: left;
-  margin:16px 0 24px;
+  margin: 16px 0 24px;
   font-weight: 800;
 }
 
-
-
-
-
-
-
-
-
 /* sample perfect section styels */
 
-.sample-perfect-section{
+.sample-perfect-section {
   display: flex;
   justify-content: space-between;
   margin: 100px 0;
 }
-.sample-perfect-text{
+.sample-perfect-text {
   width: 50%;
 }
 
-.sample-perfect-text h1{
-color: #131318;
-font-size: 40px;
-font-weight: 800;
-line-height: 60px; 
+.sample-perfect-text h1 {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 60px;
 }
-.sample-perfect-text p{
-  color: #5A5A5D;
-font-weight: 400;
-line-height: 26px; 
-margin: 24px 0;
+.sample-perfect-text p {
+  color: #5a5a5d;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 24px 0;
 }
 
-.sample-perfect-text li{
+.sample-perfect-text li {
   margin: 16px;
 }
 
-.sample-perfect-video{
+.sample-perfect-video {
   width: 50%;
 }
 
-.sample-perfect-video iframe{
+.sample-perfect-video iframe {
   width: 100%;
   border-radius: 16px;
 }
-
-
-
 
 /* News Letter Section */
 
@@ -530,22 +513,22 @@ form {
   width: 100%;
   border-radius: 16px;
 }
-.discount-box{
+.discount-box {
   background-color: var(--primary-color);
   position: absolute;
   bottom: 5.3rem;
-  right: -0.70rem;
+  right: -0.7rem;
   transform: rotate(-45deg);
 }
-.discount-box p{
-  color: #FFF;
-text-align: center;
-font-size: 24px;
+.discount-box p {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
 }
-.discount-box h1{
-  color: #FFF;
-font-size: 32px;
-font-weight: 800;
+.discount-box h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 800;
 }
 
 /* Footer Section Styles */
@@ -608,6 +591,10 @@ footer {
     flex-direction: column;
   }
 
+  .hero-title {
+    font-size: 2rem;
+  }
+
   /* Popular Tour Styles */
 
   .polular-tours-section {
@@ -629,13 +616,12 @@ footer {
     /* height: 70%; */
   }
 
-
   /* CHOOSE YOUR DESTINATION STYLE */
 
   .row {
     flex-direction: column;
 
-  /* Why choose us section Styles */
+    /* Why choose us section Styles */
   }
   .card-box {
     flex-direction: column;
@@ -648,24 +634,18 @@ footer {
 
   /* Deals & Discounts Styles */
 
-
-
-
-
   /* Sample Perfect */
 
-  .sample-perfect-section{
+  .sample-perfect-section {
     flex-direction: column;
     gap: 30px;
   }
-  .sample-perfect-text{
+  .sample-perfect-text {
     width: 100%;
   }
-  .sample-perfect-video{
+  .sample-perfect-video {
     width: 100%;
   }
-
-
 
   /* News Letter Section */
 
@@ -674,17 +654,15 @@ footer {
     gap: 20px;
   }
 
-  .newsletter-text{
+  .newsletter-text {
     width: 100%;
   }
 
-  .newsletter-image{
+  .newsletter-image {
     width: 100%;
   }
 
-  footer{
+  footer {
     padding: 10px;
   }
-
-  
 }
