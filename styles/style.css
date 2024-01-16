@@ -24,6 +24,7 @@
   font-weight: 800;
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
 }
 
 header,
@@ -210,7 +211,7 @@ input::placeholder {
 }
 
 .popular-tour-image img {
-  width: 60%;
+  width: 90%;
 }
 
 /* Choose your destination Styles */
@@ -562,6 +563,59 @@ footer {
   padding-bottom: 2rem;
 }
 
+
+
+.testimonial-section{
+  /* display: flex; */
+  margin: 100px 0;
+}
+
+.testimonial-section h1{
+color: #131318;
+text-align: center;
+font-size: 40px;
+font-weight: 800;
+margin: 50px;
+
+}
+
+.testimonial-card{
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial-container {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-weight: bold;
+  color: #333;
+  text-align: end;
+}
+
+
+
 @media screen and (max-width: 600px) {
   header,
   main {
@@ -589,6 +643,13 @@ footer {
   .input-field,
   button {
     flex-direction: column;
+  }
+
+  .input::placeholder {
+    text-align:left;
+    padding: 0%;
+    margin: 0;
+    
   }
 
   .hero-title {
@@ -661,6 +722,12 @@ footer {
   .newsletter-image {
     width: 100%;
   }
+
+  .testimonial-card{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
 
   footer {
     padding: 10px;
