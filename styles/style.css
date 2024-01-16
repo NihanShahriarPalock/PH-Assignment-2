@@ -206,7 +206,6 @@ input::placeholder {
   width: 50%;
   display: flex;
   justify-content: flex-end;
-  /* border: 2px solid green; */
   align-content: end;
 }
 
@@ -239,7 +238,7 @@ input::placeholder {
 .row {
   display: flex;
   justify-content: space-between;
-  /* gap: 1rem; */
+  
 }
 
 .image-container {
@@ -302,7 +301,7 @@ input::placeholder {
 }
 
 .price-card {
-  /* display: flex; */
+ 
   margin: 0 auto;
 }
 
@@ -347,7 +346,6 @@ input::placeholder {
   height: 100%;
   padding: 20px;
   display: flex;
-  /* justify-items: end; */
   justify-content: end;
   margin-bottom: 10px;
 }
@@ -378,7 +376,6 @@ input::placeholder {
 
 .deals-card {
   width: max-content;
-  /* height: 400px; */
   background-color: rgba(255, 255, 255, 0.8);
   border: 2px solid red;
   padding: 50px 50px;
@@ -390,8 +387,6 @@ input::placeholder {
 }
 .card-icon {
   display: flex;
-  /* border: 2px solid red; */
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
 }
@@ -484,11 +479,10 @@ input::placeholder {
 }
 
 form {
-  /* margin-top: 24px; */
+
   display: flex;
   flex-direction: column;
-  /* margin: 40px; */
-  /* padding: 0 auto; */
+ 
 }
 
 .newsletter input,
@@ -558,7 +552,7 @@ footer {
 }
 .copyright {
   color: #131318;
-  /* font-size: 16px; */
+  
   margin: 3rem 0 0;
   padding-bottom: 2rem;
 }
@@ -566,7 +560,6 @@ footer {
 
 
 .testimonial-section{
-  /* display: flex; */
   margin: 100px 0;
 }
 
@@ -628,7 +621,7 @@ margin: 50px;
     margin: 10px;
   }
   .hamburger {
-    /* border: 2px solid red; */
+    
     width: 50%;
     display: flex;
     justify-content: flex-end;
@@ -674,7 +667,7 @@ margin: 50px;
 
   .popular-tour-image img {
     width: 100%;
-    /* height: 70%; */
+    
   }
 
   /* CHOOSE YOUR DESTINATION STYLE */
