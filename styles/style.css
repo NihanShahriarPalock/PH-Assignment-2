@@ -49,6 +49,9 @@ main {
 .nav-logo img {
   margin-right: 16px;
 }
+.world{
+  color: var(--primary-color);
+}
 
 .nav-link {
   width: 50%;
@@ -74,7 +77,7 @@ main {
       rgba(19, 19, 24, 0.8) 0%,
       rgba(19, 19, 24, 0) 100%
     ),
-    url("/images/header-background.png");
+    url("../images/header-background.png");
   background-position: bottom center;
   background-size: cover;
   height: 70vh;
@@ -339,19 +342,94 @@ input::placeholder {
   font-weight: 400;
   line-height: 26px;
 }
-.discount-image div {
+
+.disount-card{
+  
   width: 100%;
-  margin: 24px 0;
+  height: 100%;
+  padding:20px;
+  display: flex;
+  /* justify-items: end; */
+  justify-content: end;
+  margin-bottom: 10px;
 }
 
-.discount-image div img {
-  width: 100%;
+.discount-card-start{
+
+  justify-content: start;
+
 }
-.discount-btn {
+
+
+.card-one{
+  background: url("../images/discount-1.png");
+  background-repeat: no-repeat; 
+  background-position: bottom center;
+  background-size: cover;
+
+}
+.card-two{
+  background: url("../images/discount-2.png");
+  background-repeat: no-repeat; 
+  background-position: bottom center;
+  background-size: cover;
+}
+
+
+.deals-card{
+  width: max-content;
+  /* height: 400px; */
+  background-color: rgba(255, 255, 255, 0.80);
+  border: 2px solid red;
+  padding: 50px 50px;
+  border-radius: 16px;
+  
+
+}
+
+
+
+.deals-card h2{
+  margin: 26px 0 16px;
+
+} 
+.card-icon {
+  display: flex;
   /* border: 2px solid red; */
-  position: relative;
+  /* justify-content: center; */
+  align-items: center;
   text-align: center;
 }
+
+.card-icon p {
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 10px; 
+}
+
+.deals-card p{
+  color: #5A5A5D;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+margin:0;
+}
+.deals-card .price{
+  color: var(--primary-color);
+  text-align: left;
+  margin:16px 0 24px;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
 /* sample perfect section styels */
 
 .sample-perfect-section{
@@ -569,6 +647,10 @@ footer {
   }
 
   /* Deals & Discounts Styles */
+
+
+
+
 
   /* Sample Perfect */
 
