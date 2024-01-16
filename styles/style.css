@@ -214,6 +214,53 @@ input::placeholder {
   margin: 6.25rem 0;
 }
 
+.choose-destination-section h1 {
+  color: #131318;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.choose-destination-section p {
+  margin: 24px 0 48px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 1rem; */
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.row img {
+  width: 100%;
+  margin: 1rem;
+  border-radius: 8px; 
+}
+
+.image-container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 1.8rem;
+  font-weight: 800; 
+}
+
+
+
+
 /* Why choose us section Styles */
 .choose-us-section {
   margin: 6.25rem 0;
@@ -275,8 +322,6 @@ input::placeholder {
 
 .deals-discounts-section {
   margin: 100px 0;
- 
-  
 }
 
 .deals-discounts-section h1 {
@@ -294,56 +339,110 @@ input::placeholder {
   font-weight: 400;
   line-height: 26px;
 }
-.discount-image div{
-    width: 100%;
-    margin: 24px 0;
+.discount-image div {
+  width: 100%;
+  margin: 24px 0;
 }
 
-.discount-image div img{
-    width: 100%;
-    
-    
+.discount-image div img {
+  width: 100%;
 }
-.discount-btn{
-    /* border: 2px solid red; */
-    position: relative;
-    text-align: center;
-   
+.discount-btn {
+  /* border: 2px solid red; */
+  position: relative;
+  text-align: center;
 }
 
+/* News Letter Section */
+
+.newsletter-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+}
+
+.newsletter-text {
+  width: 50%;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #ff5400;
+}
+
+.newsletter-text h1 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.newsletter-text p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0 24px;
+}
+
+form {
+  /* margin-top: 24px; */
+  display: flex;
+  flex-direction: column;
+  /* margin: 40px; */
+  /* padding: 0 auto; */
+}
+
+.newsletter input,
+.newsletter button {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px 0;
+  background: rgba(19, 19, 24, 0.05);
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+}
+
+.newsletter-image {
+  width: 50%;
+}
+
+.newsletter-image img {
+  width: 100%;
+  border-radius: 16px;
+}
 
 /* Footer Section Styles */
-footer{
-    margin: 0;
-    padding: 0;
-    background-color: rgba(19, 19, 24, 0.05);
-    text-align: center;
-    width: 100%;
-    height: 75vh;
+footer {
+  margin: 100px 0 0;
+  padding: 0 20rem;
+  background-color: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  width: 100%;
+  height: 70%;
 }
-.footer-top{
-    padding-top: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.footer-top {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-desc{
+.footer-desc {
   margin: 15px 0 33px;
 }
-.social-icon i{
-    margin-bottom:50px;
-    gap: 2rem;
-    padding-left: 23px;
-    
-  }
-.copyright{
- color: #131318;
-/* font-size: 16px; */
-margin:3rem 0 16.8rem;
-
+.social-icon i {
+  margin-bottom: 50px;
+  gap: 2rem;
+  padding-left: 23px;
 }
-
+.copyright {
+  color: #131318;
+  /* font-size: 16px; */
+  margin: 3rem 0 0;
+  padding-bottom: 2rem;
+}
 
 @media screen and (max-width: 600px) {
   header,
@@ -392,10 +491,17 @@ margin:3rem 0 16.8rem;
 
   .popular-tour-image img {
     width: 100%;
+    /* height: 70%; */
   }
 
-  /* Why choose us section Styles */
 
+  /* CHOOSE YOUR DESTINATION STYLE */
+
+  .row {
+    flex-direction: column;
+
+  /* Why choose us section Styles */
+  }
   .card-box {
     flex-direction: column;
   }
@@ -406,4 +512,25 @@ margin:3rem 0 16.8rem;
   }
 
   /* Deals & Discounts Styles */
+
+  /* News Letter Section */
+
+  .newsletter-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .newsletter-text{
+    width: 100%;
+  }
+
+  .newsletter-image{
+    width: 100%;
+  }
+
+  footer{
+    padding: 10px;
+  }
+
+  
 }
